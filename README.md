@@ -40,15 +40,26 @@ En Mac o Linux se calcula con `shasum -a 256 iptv-appliance-1.0.7.img.xz`; en Wi
 
 ## 2. Grabar la microSD
 
+Las capturas son de Raspberry Pi Imager 2.0 en inglés. Si el tuyo está en español, los botones dicen lo mismo traducido.
+
 1. Instala **Raspberry Pi Imager** desde <https://www.raspberrypi.com/software/>.
-2. Mete la microSD en la computadora.
-3. Abre Raspberry Pi Imager y elige:
-   - **Dispositivo:** tu modelo de Raspberry Pi.
-   - **Sistema operativo:** baja hasta el final de la lista y elige **Usar personalizado** (*Use custom*). Selecciona el archivo `.img.xz` que descargaste.
-   - **Almacenamiento:** tu microSD. Revisa que sea la correcta: se borra todo lo que tenga.
-4. Si pregunta si quieres **aplicar ajustes de personalización** (usuario, Wi-Fi, SSH), responde **No**. El equipo se configura solo desde el teléfono, y esos ajustes pueden impedir que arranque bien.
-5. Confirma y espera a que termine de **escribir y verificar** (5 a 10 minutos).
-6. Saca la microSD.
+2. Mete la microSD en la computadora y abre Raspberry Pi Imager.
+3. **Device (Dispositivo):** elige tu modelo de Raspberry Pi y pulsa **Next**.
+
+   ![Elegir el modelo de Raspberry Pi](img/imager-1-dispositivo.jpg)
+
+4. **OS (Sistema operativo):** baja hasta el **final de la lista** y elige **Use custom** (*Usar personalizado*).
+
+   ![Use custom, al final de la lista de sistemas](img/imager-2-usar-personalizado.jpg)
+
+5. Se abre una ventana para buscar archivos: selecciona el `.img.xz` que descargaste. "Use custom" queda marcado y debajo dice **Local - 3.1 GB**. Pulsa **Next**.
+
+   ![La imagen ya elegida](img/imager-3-imagen-elegida.jpg)
+
+6. **Storage (Almacenamiento):** elige tu microSD y pulsa **Next**. Revisa que sea la correcta: se borra todo lo que tenga.
+7. **Customisation (Personalización):** si ofrece configurar usuario, Wi-Fi o SSH, **no pongas nada** (o responde **No**). El equipo se configura solo desde el teléfono, y esos ajustes pueden impedir que arranque bien.
+8. **Writing (Escritura):** confirma y espera a que termine de **escribir y verificar** (5 a 10 minutos).
+9. Cuando diga **Done**, saca la microSD.
 
 ## 3. Conectar y encender
 
